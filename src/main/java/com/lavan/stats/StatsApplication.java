@@ -1,7 +1,6 @@
 package com.lavan.stats;
 
 import com.lavan.stats.service.NBAPlayerStatsAPIService;
-import com.lavan.stats.service.PlayerService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
