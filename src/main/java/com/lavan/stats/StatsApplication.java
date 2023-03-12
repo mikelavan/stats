@@ -15,11 +15,14 @@ public class StatsApplication {
 
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter the Id of the NBA player: ");
-		String playerId = scanner.nextLine();
+		boolean continueLoop = true;
 
-		while(scanner.hasNextLine()) {
-			if (playerId.equals("exit")) {
+		while (continueLoop) {
+			System.out.print("Enter the Id of the NBA player: ");
+			String playerId = scanner.nextLine();
+
+			if (playerId.equalsIgnoreCase("exit")) {
+				continueLoop = false;
 				System.out.println("Closing Scanner...");
 				scanner.close();
 			} else {
@@ -30,5 +33,6 @@ public class StatsApplication {
 			}
 		}
 	}
-
 }
+
+
